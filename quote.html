@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Quote - Nimai Trading Ltd | Mauritius Packaging Pricing</title>
+    <meta name="description" content="Get a custom quote for packaging solutions from Nimai Trading Ltd. Thermal ribbons, labels, strapping, and dunnage bags in Mauritius.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h2>Nimai Trading Ltd</h2>
+                </a>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="products.html" class="nav__link">Products</a>
+                </li>
+                <li class="nav__item">
+                    <a href="industries.html" class="nav__link">Industries</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </li>
+                <li class="nav__item">
+                    <a href="quote.html" class="nav__link active nav__link--cta">Request Quote</a>
+                </li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header section section--light">
+            <div class="container">
+                <h1 class="page-header__title">Request a Quote</h1>
+                <p class="page-header__description">Get customized pricing for our packaging and labeling solutions</p>
+            </div>
+        </section>
+
+        <!-- Quote Form Section -->
+        <section class="section">
+            <div class="container">
+                <div class="quote-process">
+                    <div class="quote-info">
+                        <h2>Get Your Custom Quote</h2>
+                        <p>Fill out the form below with your requirements, and our team will provide you with a detailed quote tailored to your needs.</p>
+                        
+                        <div class="quote-benefits">
+                            <h3>Why Get a Quote from Us?</h3>
+                            <ul>
+                                <li>✅ Competitive pricing for Mauritian businesses</li>
+                                <li>✅ Volume discounts available</li>
+                                <li>✅ Custom solutions for unique requirements</li>
+                                <li>✅ Fast response within 24 hours</li>
+                                <li>✅ No obligation - quotes are free</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="quote-tips">
+                            <h3>For Accurate Pricing, Please Provide:</h3>
+                            <ul>
+                                <li>Specific product requirements</li>
+                                <li>Estimated quantities</li>
+                                <li>Delivery timeline</li>
+                                <li>Any special specifications</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="quote-form-container">
+                        <form class="quote-form card" id="quoteForm">
+                            <div class="card__body">
+                                <h2 class="quote-form__title">Quote Request Form</h2>
+                                
+                                <div class="form__success" id="quoteSuccess">
+                                    Thank you for your quote request! We'll get back to you with pricing within 24 hours.
+                                </div>
+
+                                <!-- Contact Information -->
+                                <fieldset class="form-section">
+                                    <legend class="form-section__title">Contact Information</legend>
+                                    
+                                    <div class="form-row">
+                                        <div class="form__group">
+                                            <label for="quoteName" class="form__label">Full Name *</label>
+                                            <input type="text" id="quoteName" name="name" class="form__input" required>
+                                        </div>
+                                        <div class="form__group">
+                                            <label for="quoteCompany" class="form__label">Company Name *</label>
+                                            <input type="text" id="quoteCompany" name="company" class="form__input" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form__group">
+                                            <label for="quoteEmail" class="form__label">Email Address *</label>
+                                            <input type="email" id="quoteEmail" name="email" class="form__input" required>
+                                        </div>
+                                        <div class="form__group">
+                                            <label for="quotePhone" class="form__label">Phone Number *</label>
+                                            <input type="tel" id="quotePhone" name="phone" class="form__input" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form__group">
+                                        <label for="quoteAddress" class="form__label">Business Address</label>
+                                        <textarea id="quoteAddress" name="address" class="form__input form__textarea" rows="3"></textarea>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Product Selection -->
+                                <fieldset class="form-section">
+                                    <legend class="form-section__title">Product Requirements</legend>
+                                    
+                                    <div class="form__group">
+                                        <label class="form__label">Products Interested In *</label>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="products" value="thermal-ribbons">
+                                                <span class="checkbox__label">Thermal Transfer Ribbons</span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="products" value="shipping-labels">
+                                                <span class="checkbox__label">Shipping Labels</span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="products" value="strapping">
+                                                <span class="checkbox__label">Strapping Solutions</span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="products" value="dunnage-bags">
+                                                <span class="checkbox__label">Dunnage Air Bags</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Dynamic product details would be added here with JavaScript -->
+                                    <div id="productDetails"></div>
+
+                                    <div class="form__group">
+                                        <label for="quantity" class="form__label">Estimated Monthly Usage</label>
+                                        <select id="quantity" name="quantity" class="form__select">
+                                            <option value="">Select usage range</option>
+                                            <option value="low">Low (Under 100 units)</option>
+                                            <option value="medium">Medium (100-500 units)</option>
+                                            <option value="high">High (500-1000 units)</option>
+                                            <option value="bulk">Bulk (1000+ units)</option>
+                                            <option value="custom">Custom Requirements</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <label for="urgency" class="form__label">Urgency of Requirement</label>
+                                        <select id="urgency" name="urgency" class="form__select">
+                                            <option value="">Select urgency</option>
+                                            <option value="immediate">Immediate (Within 1 week)</option>
+                                            <option value="soon">Soon (Within 2-4 weeks)</option>
+                                            <option value="planning">Planning Stage (1-3 months)</option>
+                                            <option value="future">Future Reference (3+ months)</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Additional Information -->
+                                <fieldset class="form-section">
+                                    <legend class="form-section__title">Additional Information</legend>
+                                    
+                                    <div class="form__group">
+                                        <label for="specifications" class="form__label">Specific Requirements</label>
+                                        <textarea id="specifications" name="specifications" class="form__input form__textarea" rows="4" placeholder="Please provide any specific requirements, sizes, materials, or special instructions..."></textarea>
+                                    </div>
+                                    
+                                    <div class="form__group">
+                                        <label for="currentSupplier" class="form__label">Current Supplier (if any)</label>
+                                        <input type="text" id="currentSupplier" name="current_supplier" class="form__input">
+                                    </div>
+                                    
+                                    <div class="form__group">
+                                        <label for="budget" class="form__label">Budget Range (Optional)</label>
+                                        <select id="budget" name="budget" class="form__select">
+                                            <option value="">Select budget range</option>
+                                            <option value="under-5k">Under MUR 5,000</option>
+                                            <option value="5k-20k">MUR 5,000 - 20,000</option>
+                                            <option value="20k-50k">MUR 20,000 - 50,000</option>
+                                            <option value="50k-plus">MUR 50,000+</option>
+                                            <option value="not-sure">Not Sure</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+
+                                <button type="submit" class="btn btn--primary btn--full form__submit">
+                                    <span class="btn__text">Submit Quote Request</span>
+                                    <div class="spinner hidden"></div>
+                                </button>
+                                
+                                <p class="form-note">
+                                    * Required fields. We respect your privacy and will not share your information with third parties.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Steps -->
+        <section class="section section--light">
+            <div class="container">
+                <h2 class="section__title">What Happens Next?</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="process-step__number">1</div>
+                        <h3 class="process-step__title">Submit Your Request</h3>
+                        <p class="process-step__description">Fill out the quote form with your requirements</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-step__number">2</div>
+                        <h3 class="process-step__title">We Review Your Needs</h3>
+                        <p class="process-step__description">Our experts analyze your requirements and prepare a customized quote</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-step__number">3</div>
+                        <h3 class="process-step__title">Receive Your Quote</h3>
+                        <p class="process-step__description">Get detailed pricing and recommendations within 24 hours</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-step__number">4</div>
+                        <h3 class="process-step__title">Place Your Order</h3>
+                        <p class="process-step__description">Proceed with your order and enjoy our reliable service</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Alternative -->
+        <section class="section section--dark">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Prefer to Talk Directly?</h2>
+                    <p class="cta__description">
+                        Sometimes it's easier to discuss your requirements over the phone. Our team is ready to help.
+                    </p>
+                    <div class="cta__buttons">
+                        <a href="tel:+230XXXXXXX" class="btn btn--primary">Call Us Now</a>
+                        <a href="contact.html" class="btn btn--white">Other Contact Methods</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Nimai Trading Ltd</h3>
+                    <p class="footer__description">
+                        Your trusted partner for packaging and labeling solutions in Mauritius.
+                    </p>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Pricing & Quotes</h4>
+                    <ul class="footer__links">
+                        <li><a href="quote.html">Request Quote</a></li>
+                        <li><a href="products.html">Product Catalog</a></li>
+                        <li><a href="contact.html">Sales Team</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Nimai Trading Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

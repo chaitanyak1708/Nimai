@@ -1,0 +1,54 @@
+/* Import all CSS modules */
+@import url('base.css');
+@import url('components.css');
+@import url('layout.css');
+@import url('sections.css');
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .hero__buttons,
+    .cta__buttons {
+        display: none !important;
+    }
+    
+    .hero {
+        background: none !important;
+        color: black !important;
+        padding: 20px 0 !important;
+    }
+    
+    .section {
+        padding: 20px 0 !important;
+        break-inside: avoid;
+    }
+    
+    a {
+        color: black !important;
+        text-decoration: underline !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #0000ff;
+        --primary-dark: #0000cc;
+        --text-dark: #000000;
+        --text-light: #333333;
+        --border-color: #000000;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
