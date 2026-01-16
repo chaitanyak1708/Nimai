@@ -1,5 +1,5 @@
 /* Header & Navigation */
-/* Header & Navigation */
+
 .header {
     background: var(--white);
     box-shadow: var(--shadow);
@@ -28,31 +28,48 @@
     align-items: center;
     gap: var(--space-sm);
     text-decoration: none;
+    transition: var(--transition);
+}
+
+.nav__logo:hover {
+    transform: scale(1.02);
 }
 
 .nav__logo-image {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ec4899; /* Pink color */
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
+    width: 50px; /* Adjust based on your logo aspect ratio */
+    height: 50px;
+    object-fit: contain; /* Preserves logo aspect ratio */
+    display: block;
+    border-radius: 5px; /* Optional: slight rounding */
+}
+
+/* If your logo has transparency and needs background */
+.nav__logo-image.has-bg {
+    background: #ec4899; /* Pink background if logo needs it */
+    padding: 4px;
 }
 
 .nav__logo-text {
-    color: #ec4899; /* Same pink color */
+    color: #ec4899; /* Pink color */
     font-size: 1.5rem;
     font-weight: 700;
+    margin: 0;
+    line-height: 1;
+    transition: var(--transition);
 }
 
 .nav__logo:hover .nav__logo-text {
     color: #db2777; /* Darker pink on hover */
 }
 
+/* Alternative: If logo contains both image and text */
+.nav__logo-combined {
+    height: 50px; /* Fixed height for logo */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Navigation menu and links remain the same... */
 .nav__menu {
     display: flex;
     list-style: none;

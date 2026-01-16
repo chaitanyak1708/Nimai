@@ -13,10 +13,10 @@
     <!-- Header & Navigation -->
     <header class="header">
         <nav class="nav container">
-            <div class="nav__logo">
-                <div class="nav__logo-image">NT</div>
+            <a href="index.html" class="nav__logo">
+                <img src="assets/images/logo.png" alt="Nimai Trading Ltd - Packaging Solutions Mauritius" class="nav__logo-image">
                 <h2 class="nav__logo-text">Nimai Trading Ltd</h2>
-            </div>
+            </a>
             <ul class="nav__menu" id="nav-menu">
                 <li class="nav__item">
                     <a href="index.html" class="nav__link active">Home</a>
@@ -48,24 +48,73 @@
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="hero__container container">
-                <div class="hero__content">
-                    <h1 class="hero__title">
-                        Your Trusted Partner in <span class="hero__highlight">Packaging & Labeling</span> Solutions
-                    </h1>
-                    <p class="hero__description">
-                        Premium quality thermal transfer ribbons, shipping labels, strapping solutions, and dunnage air bags for businesses across Mauritius.
-                    </p>
-                    <div class="hero__buttons">
-                        <a href="products.html" class="btn btn--primary">Explore Products</a>
-                        <a href="quote.html" class="btn btn--secondary">Get a Quote</a>
+            <!-- Slideshow Container -->
+            <div class="hero-slideshow">
+                <div class="slide active">
+                    <div class="slide-content">
+                        <div class="hero__container container">
+                            <div class="hero__content">
+                                <h1 class="hero__title">
+                                    Your Trusted Partner in <span class="hero__highlight">Packaging & Labeling</span> Solutions
+                                </h1>
+                                <p class="hero__description">
+                                    Premium quality thermal transfer ribbons, shipping labels, strapping solutions, and dunnage air bags for businesses across Mauritius.
+                                </p>
+                                <div class="hero__buttons">
+                                    <a href="products.html" class="btn btn--primary">Explore Products</a>
+                                    <a href="quote.html" class="btn btn--secondary">Get a Quote</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="hero__image">
-                    <div class="hero__placeholder">
-                        <span>Industrial Packaging Image</span>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="hero__container container">
+                            <div class="hero__content">
+                                <h1 class="hero__title">
+                                    Quality <span class="hero__highlight">Thermal Ribbons</span> for Clear Barcode Printing
+                                </h1>
+                                <p class="hero__description">
+                                    High-resolution wax, wax-resin, and resin ribbons that ensure durable, scannable labels for your business.
+                                </p>
+                                <div class="hero__buttons">
+                                    <a href="products.html#ribbons" class="btn btn--primary">View Ribbons</a>
+                                    <a href="quote.html" class="btn btn--secondary">Request Samples</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="hero__container container">
+                            <div class="hero__content">
+                                <h1 class="hero__title">
+                                    Secure Shipping with <span class="hero__highlight">Strapping Solutions</span>
+                                </h1>
+                                <p class="hero__description">
+                                    High-strength polypropylene strapping to protect your shipments and prevent load shift during transit.
+                                </p>
+                                <div class="hero__buttons">
+                                    <a href="products.html#strapping" class="btn btn--primary">Learn More</a>
+                                    <a href="industries.html#logistics" class="btn btn--secondary">For Logistics</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slideshow Controls -->
+            <div class="slideshow-controls">
+                <button class="slide-prev" aria-label="Previous slide">‹</button>
+                <div class="slide-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="slide-next" aria-label="Next slide">›</button>
             </div>
         </section>
 
@@ -317,7 +366,7 @@
                     <h4 class="footer__subtitle">Contact Info</h4>
                     <ul class="footer__links">
                         <li>📍 Mauritius</li>
-                        <li>📞 +230 XXX XXXX</li>
+                        <li>📞 +230 5707 6180</li>
                         <li>✉️ info@nimaitrading.mu</li>
                     </ul>
                 </div>
