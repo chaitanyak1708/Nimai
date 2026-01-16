@@ -72,3 +72,9 @@ document.querySelectorAll('.btn').forEach(button => {
         }, 2000);
     });
 });
+
+// In assets/js/main.js, add this at the bottom:
+import './slideshow.js';
+
+// Or if you're not using modules, just load slideshow.js in HTML:
+<script src="assets/js/slideshow.js"></script>
