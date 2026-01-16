@@ -501,6 +501,92 @@
     margin-top: var(--space-xl);
 }
 
+/* About Story Image Styles */
+.about-story__image {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    height: 100%;
+    min-height: 400px;
+}
+
+.company-story-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.about-story__image:hover .company-story-image {
+    transform: scale(1.03);
+}
+
+/* Optional image caption */
+.company-image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    padding: var(--space-md) var(--space-lg);
+    color: var(--white);
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.about-story__image:hover .company-image-caption {
+    opacity: 1;
+}
+
+/* Remove the placeholder */
+.about-story__image .image-placeholder {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-story__image {
+        min-height: 300px;
+        order: -1; /* Image above text on mobile */
+        margin-bottom: var(--space-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .about-story__image {
+        min-height: 250px;
+    }
+    
+    .company-image-caption {
+        padding: var(--space-sm);
+        font-size: 0.8rem;
+    }
+}
+
+/* Professional framed look */
+.about-story__image.framed {
+    border: 10px solid var(--white);
+    box-shadow: var(--shadow-lg), 
+                0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.about-story__image.framed::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid var(--primary-color);
+    border-radius: calc(var(--border-radius-lg) + 5px);
+    z-index: -1;
+    opacity: 0.3;
+}
+
 .stat {
     text-align: center;
     padding: var(--space-md);
